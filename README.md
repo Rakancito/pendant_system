@@ -1,6 +1,9 @@
 # pendant_system
 Pendant System metin2 
 
+# DB:
+
+Do you need design the Table item_attr and add pendant.
 
 # Bonus Name:
 
