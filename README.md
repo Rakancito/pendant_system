@@ -4,7 +4,7 @@ Pendant System metin2
 
 # Bonus Name:
 
-- If you like the bonus like Official just change all names, apply and point and gg its very easy, i put this name for my orientation.
+If you like the bonus like Official just change all names, apply and point and gg its very easy, i put this name for my orientation.
 
 - APPLY_ATTBONUS_ELEC
 - APPLY_ATTBONUS_FIRE
