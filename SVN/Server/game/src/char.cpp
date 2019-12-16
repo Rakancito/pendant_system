@@ -22,6 +22,24 @@ void CHARACTER::BroadcastTargetPacket()
 		}
 		p.bElement = curElementBase - ELEMENT_BASE;
 	}
+	else if(m_pkChrTarget && m_pkChrTarget->IsPC())
+	{
+		LPITEM pkElement = m_pkChrTarget->GetWear(WEAR_PENDANT);
+		if (!pkElement) // NONE
+			p.bElement = 0;
+		else if (pkElement && (pkElement->GetVnum() >= 9600 && pkElement->GetVnum() <= 9800))	
+			p.bElement = 2;
+		else if (pkElement && (pkElement->GetVnum() >= 9830 && pkElement->GetVnum() <= 10030))	
+			p.bElement = 3;
+		else if (pkElement && (pkElement->GetVnum() >= 10060 && pkElement->GetVnum() <= 10260))
+			p.bElement = 5;
+		else if (pkElement && (pkElement->GetVnum() >= 10290 && pkElement->GetVnum() <= 10490))	
+			p.bElement = 6;
+		else if (pkElement && (pkElement->GetVnum() >= 10520 && pkElement->GetVnum() <= 10720))	
+			p.bElement = 4;
+		else if (pkElement && (pkElement->GetVnum() >= 10750 && pkElement->GetVnum() <= 10950))
+			p.bElement = 1;
+	}
 	else
 	{
 		p.bElement = 0;
