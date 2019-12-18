@@ -26,3 +26,6 @@ If you like the bonus like Official just change all names, apply and point and g
 - APPLY_ATTBONUS_DESERT
 - APPLY_ATTBONUS_INSECT
 - APPLY_RESIST_CLAW_REDUCTION
+
+
+Thanks @metin2-factory for some parts of code publish in Metin2.dev
