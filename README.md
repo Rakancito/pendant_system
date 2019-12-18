@@ -27,5 +27,5 @@ If you like the bonus like Official just change all names, apply and point and g
 - APPLY_ATTBONUS_INSECT
 - APPLY_RESIST_CLAW_REDUCTION
 
-
+For the element target you need see: https://metin2.dev/board/index.php?/topic/17159-cpython175-element-image-on-target/ I add some parts in the guide, but not all.
 Thanks @metin2-factory for some parts of code publish in Metin2.dev
