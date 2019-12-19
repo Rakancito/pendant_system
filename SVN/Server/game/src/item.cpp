@@ -15,9 +15,29 @@
 		return WEAR_PENDANT;
 #endif
 
+
+// IMPORTANT PART FOR VERSION OF DIFFERENT SRC
+//****************************************************************************/
+//****************************************************************************/
+//****************************************************************************/
+
 // okey, it's important this part, if you not find WEARABLE because you are using a different version of src you need search, and thanks
 // .Rewn for the fix.
 
+// Search
+int CItem::FindEquipCell(LPCHARACTER ch, int iCandidateCell)
+{
+    if ((0 == GetWearFlag() || ITEM_TOTEM == GetType()) && ITEM_COSTUME != GetType() && ITEM_DS != GetType() && ITEM_SPECIAL_DS != GetType() && ITEM_RING != GetType() && ITEM_BELT != GetType())
+
+// Change for this
+	    
+#ifdef ITEM_TALISMAN_EQUIPMENT
+    if ((0 == GetWearFlag() || ITEM_TOTEM == GetType()) && ITEM_COSTUME != GetType() && ITEM_DS != GetType() && ITEM_SPECIAL_DS != GetType() && ITEM_RING != GetType() && ITEM_BELT != GetType() && ITEM_ARMOR != GetType())
+#else
+    if ((0 == GetWearFlag() || ITEM_TOTEM == GetType()) && ITEM_COSTUME != GetType() && ITEM_DS != GetType() && ITEM_SPECIAL_DS != GetType() && ITEM_RING != GetType() && ITEM_BELT != GetType())
+#endif
+
+	    
 // Search
 
     else if (GetType() == ITEM_COSTUME)
@@ -43,13 +63,18 @@
             return WEAR_NECK;
         else if (GetSubType() == ARMOR_EAR)
             return WEAR_EAR;
-#ifdef ENABLE_PENDANT
+#ifdef ITEM_TALISMAN_EQUIPMENT
         else if (GetSubType() == ARMOR_PENDANT)
             return WEAR_PENDANT;
 #endif
     }
 
-
+// END IMPORTANT PART FOR VERSION OF DIFFERENT SRC
+//****************************************************************************/
+//****************************************************************************/
+//****************************************************************************/
+//****************************************************************************/
+	
 // Search
 
 		case ITEM_ARMOR:
