@@ -20,15 +20,34 @@
 
 // Search
 
-	else if (GetSubType() == ARMOR_EAR)
-		return WEAR_EAR;
+    else if (GetType() == ITEM_COSTUME)
+    {
+        ...
+    }
 
-// Add after
+//Add after
 
-#ifdef ITEM_TALISMAN_EQUIPMENT
-	else if (GetWearFlag() & ARMOR_PENDANT)
-		return WEAR_PENDANT;
+    else if (GetType() == ITEM_ARMOR)
+    {
+        if (GetSubType() == ARMOR_BODY)
+            return WEAR_BODY;
+        else if (GetSubType() == ARMOR_HEAD)
+            return WEAR_HEAD;
+        else if (GetSubType() == ARMOR_SHIELD)
+            return WEAR_SHIELD;
+        else if (GetSubType() == ARMOR_WRIST)
+            return WEAR_WRIST;
+        else if (GetSubType() == ARMOR_FOOTS)
+            return WEAR_FOOTS;
+        else if (GetSubType() == ARMOR_NECK)
+            return WEAR_NECK;
+        else if (GetSubType() == ARMOR_EAR)
+            return WEAR_EAR;
+#ifdef ENABLE_PENDANT
+        else if (GetSubType() == ARMOR_PENDANT)
+            return WEAR_PENDANT;
 #endif
+    }
 
 
 // Search
