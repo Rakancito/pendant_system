@@ -5,3 +5,4 @@
 
 										{"index":item.EQUIPMENT_PENDANT, "x":2, "y":106, "width":32, "height":32},
 
+####### NOTE: In some cases you need to edit uiscript/inventorywindow not in locale. 
