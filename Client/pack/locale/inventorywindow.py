@@ -1,4 +1,4 @@
-# Search
+# Search for every else/elif
 										{"index":item.EQUIPMENT_BELT, "x":39, "y":106, "width":32, "height":32},
 
 # Add after
